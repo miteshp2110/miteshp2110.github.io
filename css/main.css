@@ -3084,6 +3084,41 @@ form textarea:required:valid {
   
 } */
 
+/* Add these new styles to your css/main.css file */
+
+.avatar__image__container {
+  width: 100%;
+  max-width: 250px; /* Controls the max size of the image */
+  margin: 0 auto; /* Centers the container */
+  border-radius: 1.5rem; /* Rounded corners */
+  overflow: hidden;
+  border: 1px solid var(--stroke-elements);
+}
+
+.avatar__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.avatar__container {
+  padding: 1.5rem; /* Reduced padding for a tighter look */
+}
+
+@media only screen and (min-width: 1400px) {
+  .avatar__container {
+    padding: 2rem;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
 .avatar__socials {
   margin-bottom: 2rem;
   display: flex;
@@ -3744,7 +3779,6 @@ form textarea:required:valid {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 520px;
 }
 @media only screen and (min-width: 1400px) {
   .cards__item {
